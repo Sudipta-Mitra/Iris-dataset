@@ -65,7 +65,7 @@ Visit http://127.0.0.1:5000 in your browser
 # 🧠 About the Model
 - Trained on the classic Iris dataset from sklearn.datasets
 
-- Likely using a classification model such as Logistic Regression, KNN, or RandomForest
+- Using a classification model - Logistic Regression
 
 - Output is mapped from class labels (0, 1, 2) to species names
 ---
