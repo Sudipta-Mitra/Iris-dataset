@@ -30,10 +30,14 @@ iris-flask-app/
     └── result.html         # Output result
 # 🖥️ Screenshots
 🔹 Input Page (index.html)
-Users input flower dimensions via an interactive form. ![1st page](Screenshot(47).png)
+Users input flower dimensions via an interactive form. 
+
+![1st page](page1.png)
 
 🔹 Result Page (result.html)
 Displays predicted Iris species using model output.
+
+![2nd page](page2.png)
 
 ---
 # 📦 Requirements
