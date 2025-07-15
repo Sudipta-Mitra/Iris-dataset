@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iris Flower Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #6dd5ed, #2193b0);
+            color: #fff;
+            text-align: center;
+            padding: 50px;
+        }
+        form {
+            background-color: rgba(0,0,0,0.3);
+            padding: 30px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        input {
+            padding: 10px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #2193b0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iris Flower Species Prediction</h1>
+    <form method="POST" action="/predict">
+        <input type="text" name="sepal_length" placeholder="Sepal Length" required><br>
+        <input type="text" name="sepal_width" placeholder="Sepal Width" required><br>
+        <input type="text" name="petal_length" placeholder="Petal Length" required><br>
+        <input type="text" name="petal_width" placeholder="Petal Width" required><br>
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction_text | default('') %}
+    <div class="result">{{ prediction_text }}</div>
+{% endif %}
+
+</body>
+</html>

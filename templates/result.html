@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            color: #fff;
+            text-align: center;
+            padding: 50px;
+        }
+        .card {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        .result {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: #0072ff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="result">
+            {{ prediction_text }}
+        </div>
+        <a href="/">Try Again</a>
+    </div>
+</body>
+</html>
