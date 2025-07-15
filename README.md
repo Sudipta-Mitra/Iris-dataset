@@ -30,7 +30,7 @@ iris-flask-app/
     └── result.html         # Output result
 # 🖥️ Screenshots
 🔹 Input Page (index.html)
-Users input flower dimensions via an interactive form. https://github.com/Sudipta-Mitra/Iris-dataset/blob/main/Screenshot%20(47).png
+Users input flower dimensions via an interactive form. ![1st page](Screenshot(47).png)
 
 🔹 Result Page (result.html)
 Displays predicted Iris species using model output.
